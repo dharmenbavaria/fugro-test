@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fugro.Locations.Dto", "fugro.locations.dto\Fugro.Locations.Dto.csproj", "{484FE09E-1111-4710-9FF1-64681143628C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fugro.Locations.Repository", "fugro.locations.repository\Fugro.Locations.Repository.csproj", "{02A37CC9-AD1E-406F-A41D-8805D459A718}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fugro.Locations.Webapi", "fugro.locations.webapi\Fugro.Locations.Webapi.csproj", "{C1B8A802-B2FC-47A0-9613-5793B5EAE3B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ACD6C429-7DB1-4768-B578-9BB7311E2917}"
+	ProjectSection(SolutionItems) = preProject
+		..\assignments.md = ..\assignments.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{484FE09E-1111-4710-9FF1-64681143628C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484FE09E-1111-4710-9FF1-64681143628C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484FE09E-1111-4710-9FF1-64681143628C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484FE09E-1111-4710-9FF1-64681143628C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A37CC9-AD1E-406F-A41D-8805D459A718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A37CC9-AD1E-406F-A41D-8805D459A718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A37CC9-AD1E-406F-A41D-8805D459A718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A37CC9-AD1E-406F-A41D-8805D459A718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B8A802-B2FC-47A0-9613-5793B5EAE3B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B8A802-B2FC-47A0-9613-5793B5EAE3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B8A802-B2FC-47A0-9613-5793B5EAE3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B8A802-B2FC-47A0-9613-5793B5EAE3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC567A96-DCF9-49D3-83F4-884AB1438650}
+	EndGlobalSection
+EndGlobal
