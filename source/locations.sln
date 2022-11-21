@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fugro.Locations.Dto", "fugro.locations.dto\Fugro.Locations.Dto.csproj", "{484FE09E-1111-4710-9FF1-64681143628C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fugro.Locations.Repository", "fugro.locations.repository\Fugro.Locations.Repository.csproj", "{02A37CC9-AD1E-406F-A41D-8805D459A718}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fugro.Locations.Storage", "fugro.locations.repository\Fugro.Locations.Storage.csproj", "{02A37CC9-AD1E-406F-A41D-8805D459A718}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fugro.Locations.Webapi", "fugro.locations.webapi\Fugro.Locations.Webapi.csproj", "{C1B8A802-B2FC-47A0-9613-5793B5EAE3B8}"
 EndProject
