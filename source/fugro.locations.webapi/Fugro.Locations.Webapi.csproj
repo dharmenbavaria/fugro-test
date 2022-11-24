@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\fugro.locations.dto\Fugro.Locations.Dto.csproj" />
-    <ProjectReference Include="..\fugro.locations.repository\Fugro.Locations.Storage.csproj" />
+    <ProjectReference Include="..\Fugro.Locations.Services\Fugro.Locations.Services.csproj" />
   </ItemGroup>
 
 </Project>

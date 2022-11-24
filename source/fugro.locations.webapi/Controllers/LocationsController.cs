@@ -1,4 +1,6 @@
-﻿using Fugro.Locations.Dto;
+﻿using System.Collections.Generic;
+using Fugro.Locations.Dto;
+using Fugro.Locations.Services;
 using Fugro.Locations.Storage;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,25 +10,25 @@ namespace Fugro.Locations.Webapi.Controllers
     [Route("[controller]")]
     public sealed class LocationsController : ControllerBase
     {
-        private static readonly InMemoryLocationRepository m_LocationRepository = new();
+        private readonly ILocationService _locationService;
 
-        public LocationsController()
+        public LocationsController(ILocationService locationService)
         {
+            _locationService = locationService;
         }
 
         [HttpGet]
-        public ActionResult<Location> Get()
+        [Route("device/{id}")]
+        public ActionResult<IReadOnlyList<Location>> Get(int id)
         {
-            Location storedLocation = m_LocationRepository.GetLocation();
-            ActionResult<Location> result = Ok(storedLocation);
-
-            return result;
+            var locationsOfDevice = _locationService.GetLocationsOfDevice(id);
+            return Ok(locationsOfDevice); ;
         }
 
         [HttpPost]
         public ActionResult<Location> Post(Location location)
         {
-            m_LocationRepository.SetLocation(location);
+            //m_LocationRepository.SetLocation(location);
             ActionResult<Location> result = CreatedAtAction(nameof(Get), location);
 
             return result;

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\fugro.locations.dto\Fugro.Locations.Dto.csproj" />
+    <ProjectReference Include="..\fugro.locations.repository\Fugro.Locations.Storage.csproj" />
+  </ItemGroup>
+
+</Project>

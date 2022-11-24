@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Threading.Tasks;
+using Fugro.Locations.Services.Settings;
+using Fugro.Locations.Storage.Settings;
 
 namespace Fugro.Locations.Webapi
 {
@@ -15,6 +17,8 @@ namespace Fugro.Locations.Webapi
             builder.Services.AddControllers().AddNewtonsoftJson();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.SetupDatabase();
+            builder.Services.SetupBusinessServices();
 
             WebApplication app = builder.Build();
 
